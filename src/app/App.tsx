@@ -4,7 +4,7 @@ import { RootLayout } from '../modules/root-layout/RootLayout.tsx';
 
 export const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/alfa'>
       <RootLayout>
         <AppRouter />
       </RootLayout>

@@ -7,8 +7,7 @@ export const AppRouter = () => {
       {routes.map(({ path, Component }) => (
         <Route key={path} path={path} element={<Component />} />
       ))}
-      <Route path="/" element={<Navigate to="/products" />} />
-      <Route path="*" element={<Navigate to="/not-found" />} />
+      <Route path="*" element={<Navigate to="/products" />} />
     </Routes>
   );
 };
